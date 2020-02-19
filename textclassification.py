@@ -73,7 +73,7 @@ for i in df.iloc[:,1]:
   txt.append(i)
 txt = str(txt)
 # set stopwords 
-with open('drive/My Drive/TA/stop_word_fr.txt','r',encoding='utf-8') as f:
+with open("/classification_data/stop_word_fr.txt",'r',encoding='utf-8') as f:
   words= (f.read())
   f.close()
 sw = set(words)
