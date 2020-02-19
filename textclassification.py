@@ -12,9 +12,6 @@ In this notebook, we
 apply classification algorithms to newspaper articles published in 2003 in Le Monde. The data are in data/LeMonde2003_9classes.csv.gzThese articles concern different subjects but we will consider only articles related to the following subjects : entreprises (ENT), international (INT), arts (ART), société (SOC), France (FRA), sports (SPO), livres (LIV), télévision (TEL) and the font page articles (UNE).
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
-
 # Commented out IPython magic to ensure Python compatibility.
 import pandas as pd
 import seaborn as sns
@@ -49,7 +46,7 @@ from time import time
 import logging
 
 # load dataframe from CSV file
-data_dir = "/content/drive/My Drive/TA/LeMonde2003_raw.csv"
+data_dir = "/classification_data/LeMonde2003_raw.csv"
 df = pd.read_csv(data_dir)
 
 # Plot the statistics of category
